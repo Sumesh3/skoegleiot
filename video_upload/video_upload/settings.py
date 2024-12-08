@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-1)%5_)2hp^)s$85!jv9+-0*o10j8c7@71qm9juhk56yv+ln-y!"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['videos.vercel.app']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -75,8 +75,6 @@ TEMPLATES = [
 WSGI_APPLICATION = "video_upload.wsgi.application"
 
 CORS_ALLOW_ALL_ORIGINS = True
-
-STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 
 # Database
